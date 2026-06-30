@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="Back to main page  Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Subroutines and PSG R. P">
+    <meta name="description" content="Back to main page   Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Subroutines and PSG R.">
     <title>Case Study: Projection on Polyhedron with Various Norms — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -27,14 +28,19 @@
     <h1>Case Study: Projection on Polyhedron with Various Norms</h1>
 
 <a href="/research/testproblems/">Back to main page</a>
+
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2015/10/CS_Projection_CVaR_Norm_cvar_comp_abs_051413.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM1: problem_cvar_comp_abs </strong>nminimizing Cvar_comp_abs (CVaR Absolute Norm)nsubject tonAx ≤b (multiple linear constraints representing convex polyhedron set)nBox constraints (lower bounds on variables)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM1: problem_cvar_comp_abs </strong>
+minimizing Cvar_comp_abs (CVaR Absolute Norm)nsubject tonAx ≤b (multiple linear constraints representing convex polyhedron set)
+Box constraints (lower bounds on variables)
 ——————————————————————–——————
 Cvar_comp_abs = CVaR component absolutenBox constraints = constraints on individual decision variables
 ——————————————————————–——————
 ———————————————
-<strong> Alpha =0.8 , Solver Precision = 4 </strong>n———————————————
+<strong> Alpha =0.8 , Solver Precision = 4 </strong>
+———————————————
 Data and solution in Run-File Environmentn<table>
 <tbody>
 <tr>
@@ -236,7 +242,8 @@ Data and solution in Run-File Environmentn<table>
 </tr>
 </tbody>
 </table>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 </span>Data and solution in MATLAB Environmentn<table>
 <tbody>
 <tr>
@@ -257,8 +264,10 @@ Data and solution in Run-File Environmentn<table>
 <td>2.85</td>
 </tr>
 </tbody>
-</table>n———————————————
-<strong> Alpha =0.9, Solver Precision = 7 </strong>n———————————————
+</table>
+———————————————
+<strong> Alpha =0.9, Solver Precision = 7 </strong>
+———————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Data and solution in Run-File Environmentn<table>
 <tbody>
 <tr>
@@ -331,7 +340,9 @@ Data and solution in Run-File Environmentn<table>
 </tbody>
 </table>
 </div>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">nData and solution in MATLAB Environment</span>
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
+Data and solution in MATLAB Environment</span>
 <table>
 <tbody>
 <tr>
@@ -372,8 +383,10 @@ Data and solution in Run-File Environmentn<table>
 <td>40.14</td>
 </tr>
 </tbody>
-</table>n——————————————————
-<strong> Alpha =0.955279, Solver Precision = 7 </strong>n——————————————————
+</table>
+——————————————————
+<strong> Alpha =0.955279, Solver Precision = 7 </strong>
+——————————————————
 Data and solution in Run-File Environmentn<table>
 <tbody>
 <tr>
@@ -455,8 +468,10 @@ Data and solution in Run-File Environmentn<table>
 </tr>
 </tbody>
 </table>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">——————————————————
-<strong> Alpha =0.968377, Solver Precision = 7 </strong>n——————————————————
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">——————————————————
+<strong> Alpha =0.968377, Solver Precision = 7 </strong>
+——————————————————
 Download Problem Datan<table>
 <tbody>
 <tr>
@@ -528,13 +543,20 @@ Download Problem Datan<table>
 </tr>
 </tbody>
 </table>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM2: problem_mix_L1_L_Infinity </strong>nminimizing [(1-lambda)*polynom_abs+ lambda*max_comp_abs]nsubject tonAx ≤b (multiple linear constraints representing convex polyhedron set)nBox constraints (lower bounds on variables)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM2: problem_mix_L1_L_Infinity </strong>
+minimizing [(1-lambda)*polynom_abs+ lambda*max_comp_abs]nsubject tonAx ≤b (multiple linear constraints representing convex polyhedron set)
+Box constraints (lower bounds on variables)
 ——————————————————————–——————
 polynom_abs = polynomial absolute functionnmax_comp_abs=maximum component absolute functionnBox constraints = constraints on individual decision variables
-——————————————————————–——————<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">n——————————————————
-<strong> Lambda =0.90909, Solver Precision = 7 </strong>n——————————————————</span>
+——————————————————————–——————<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
+——————————————————
+<strong> Lambda =0.90909, Solver Precision = 7 </strong>
+——————————————————</span>
+
 Download Problem Datan<table>
 <tbody>
 <tr>
@@ -606,8 +628,12 @@ Download Problem Datan<table>
 </tr>
 </tbody>
 </table>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">n——————————————————
-<strong> Lambda =0.95744, Solver Precision = 7 </strong>n——————————————————</span>nDownload Problem Datan<table>
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
+——————————————————
+<strong> Lambda =0.95744, Solver Precision = 7 </strong>
+——————————————————</span>
+Download Problem Datan<table>
 <tbody>
 <tr>
 <th colspan="4">Problem Datasets</th>
@@ -688,8 +714,12 @@ Download Problem Datan<table>
 </tr>
 </tbody>
 </table>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">n——————————————————
-<strong> Lambda =0.96923, Solver Precision = 7 </strong>n——————————————————</span>
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
+——————————————————
+<strong> Lambda =0.96923, Solver Precision = 7 </strong>
+——————————————————</span>
+
 Download Problem Datan<table>
 <tbody>
 <tr>
@@ -761,15 +791,21 @@ Download Problem Datan<table>
 </tr>
 </tbody>
 </table>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;"><strong> PROBLEM3: problem_quadratic </strong>nminimizing quadratic (square of L_2 norm)nsubject tonAx ≤b (multiple linear constraints representing convex polyhedron set)nBox constraints (lower bounds on variables)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;"><strong> PROBLEM3: problem_quadratic </strong>
+minimizing quadratic (square of L_2 norm)nsubject tonAx ≤b (multiple linear constraints representing convex polyhedron set)
+Box constraints (lower bounds on variables)
 ——————————————————————–——————
 quadratic = quadratic functionnBox constraints = constraints on individual decision variables
 ——————————————————————–——————
-<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;"><span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">n——————————
-<strong> Solver Precision = 7 </strong>n——————————
-</span>nDownload Problem Data</span>
+<span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;"><span style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
+——————————
+<strong> Solver Precision = 7 </strong>
+——————————
+</span>
+Download Problem Data</span>
 <table>
 <tbody>
 <tr>
@@ -972,7 +1008,18 @@ quadratic = quadratic functionnBox constraints = constraints on individual decis
 </tbody>
 </table>
 </div>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>CASE STUDY SUMMARYn</strong>nThis case study considers the projection problems with various norms on a polyhedron set given by a system of linear inequalities. In particular, we consider the Scaled CVaR Absolute Norm introduced in Pavlikov and Uryasev (2013). The Scaled CVaR Absolute Norm in <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image008.gif" alt="" width="16" height="14"> is a family of norms based on CVaR concept. This family has a control parameter <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2012/02/CS_VaRvsProbability_clip_image010.gif" alt="" width="12" height="9">, so-called confidence level, controlling conservativeness of the norm. CVaR term and the optimization approach for CVaR was introduced in Rockafellar and Uryasev (2000). For the most conservative case, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image010.gif" alt="" width="29" height="14"> , the Scaled CVaR Absolute Norm equals the maximum absolute value of components of the vector. The least conservative norm, with <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image011.gif" alt="" width="29" height="14"> , averages absolute values of all components. In the intermediate case, for <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image012.gif" alt="" width="42" height="17"> , when <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image009.gif" alt="" width="12" height="9"> is a multiple of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image013.gif" alt="" width="20" height="20"> , the norm of a vector is defined as the average of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image014.gif" alt="" width="75" height="16"> largest absolute values of components. If <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image009.gif" alt="" width="12" height="13"> is not a multiple of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image013.gif" alt="" width="20" height="20"> , then Scaled CVaR Absolute Norm is defined as a convex combination of two values of the norm with nearest to <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image009.gif" alt="" width="12" height="13"> upper and lower multiples of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image013.gif" alt="" width="20" height="20"> confidence levels. Computational experiments for <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image001_.gif" alt="" width="62" height="19"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image002.gif" alt="" width="31" height="19"> spaces are presented. Several polyhedron sets <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image003.gif" alt="" width="12" height="13"> with different number of hyperplanes were generated, such that <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image004.gif" alt="" width="71" height="19">. The projection of 0 on <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image003.gif" alt="" width="12" height="13"> is solved with CVaR Absolute Norm, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="16" height="15"> norm, and the weighted average of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image006.gif" alt="" width="12" height="13"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image007.gif" alt="" width="15" height="17"> norms. Problem 1 solves the projection problem with CVaR Absolute Norm with confidence level <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image015.gif" alt="" width="40" height="14"> for different dimensions and different polyhedrons.nThen, Problem 1 solves the projection problems with CVaR Absolute Norm for dimensions <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> = 100, 500, 1000,and confidence levels, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image016.gif" alt="" width="70" height="16">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image017.gif" alt="" width="110" height="16">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image018.gif" alt="" width="110" height="17">, accordingly. The confidence levels, in this case, were selected with the formula <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image019.gif" alt="" width="80" height="40">, which corresponds to the best approximation of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="14" height="16"> norm by the CVaR Absolute Norm, see Gotoh and Uryasev (2013).nProblem 2 solves projection problems with weighted average of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image006.gif" alt="" width="12" height="13"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image007.gif" alt="" width="15" height="17"> norms for dimensions <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> = 100, 500, 1000. Weighting is done with the parameter <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image020.gif" alt="" width="24" height="26"> as follows: <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image021_.gif" alt="" width="180" height="16"> The weighting parameter <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image020.gif" alt="" width="24" height="26"> is a function of dimension <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> to make the best approximation of the <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="15" height="17"> norm by the weighted average of the <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image006.gif" alt="" width="12" height="13"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image007.gif" alt="" width="15" height="17"> norms, i.e., <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image023.gif" alt="" width="100" height="15">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image024.gif" alt="" width="100" height="15">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image025.gif" alt="" width="110" height="15">, see Gotoh and Uryasev (2013).nProblem 3 solves projection problems with square of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="15" height="17"> norm for dimensions <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> = 100, 500, 1000.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>References</strong>n• Pavlikov K, and S. Uryasev (2013): CVaR Absolute Norm and Applications in Optimization.nResearch Report # 2013-1.n• Rockafellar, R.T. and S. Uryasev (2013): The Fundamental Risk Quadrangle in RisknManagement, Optimization, and Statistical Estimation. Surveys in Operations Research andnManagement Science, 18 (to appear).n• Rockafellar, R. T. and Uryasev, S. (2000), “Optimization of conditional value-at-risk”,nJournal of Risk , Vol. 2, pp. 21–41.n• Gotoh, J. and S. Uryasev (2013): Approximation of Euclidean norm by LP-representablennorms and applications. Draft paper.</div>
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+CASE STUDY SUMMARYn</strong>
+This case study considers the projection problems with various norms on a polyhedron set given by a system of linear inequalities. In particular, we consider the Scaled CVaR Absolute Norm introduced in Pavlikov and Uryasev (2013). The Scaled CVaR Absolute Norm in <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image008.gif" alt="" width="16" height="14"> is a family of norms based on CVaR concept. This family has a control parameter <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2012/02/CS_VaRvsProbability_clip_image010.gif" alt="" width="12" height="9">, so-called confidence level, controlling conservativeness of the norm. CVaR term and the optimization approach for CVaR was introduced in Rockafellar and Uryasev (2000). For the most conservative case, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image010.gif" alt="" width="29" height="14"> , the Scaled CVaR Absolute Norm equals the maximum absolute value of components of the vector. The least conservative norm, with <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image011.gif" alt="" width="29" height="14"> , averages absolute values of all components. In the intermediate case, for <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image012.gif" alt="" width="42" height="17"> , when <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image009.gif" alt="" width="12" height="9"> is a multiple of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image013.gif" alt="" width="20" height="20"> , the norm of a vector is defined as the average of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image014.gif" alt="" width="75" height="16"> largest absolute values of components. If <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image009.gif" alt="" width="12" height="13"> is not a multiple of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image013.gif" alt="" width="20" height="20"> , then Scaled CVaR Absolute Norm is defined as a convex combination of two values of the norm with nearest to <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image009.gif" alt="" width="12" height="13"> upper and lower multiples of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image013.gif" alt="" width="20" height="20"> confidence levels. Computational experiments for <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image001_.gif" alt="" width="62" height="19"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image002.gif" alt="" width="31" height="19"> spaces are presented. Several polyhedron sets <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image003.gif" alt="" width="12" height="13"> with different number of hyperplanes were generated, such that <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image004.gif" alt="" width="71" height="19">. The projection of 0 on <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image003.gif" alt="" width="12" height="13"> is solved with CVaR Absolute Norm, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="16" height="15"> norm, and the weighted average of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image006.gif" alt="" width="12" height="13"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image007.gif" alt="" width="15" height="17"> norms. Problem 1 solves the projection problem with CVaR Absolute Norm with confidence level <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image015.gif" alt="" width="40" height="14"> for different dimensions and different polyhedrons.
+Then, Problem 1 solves the projection problems with CVaR Absolute Norm for dimensions <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> = 100, 500, 1000,and confidence levels, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image016.gif" alt="" width="70" height="16">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image017.gif" alt="" width="110" height="16">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image018.gif" alt="" width="110" height="17">, accordingly. The confidence levels, in this case, were selected with the formula <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image019.gif" alt="" width="80" height="40">, which corresponds to the best approximation of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="14" height="16"> norm by the CVaR Absolute Norm, see Gotoh and Uryasev (2013).
+Problem 2 solves projection problems with weighted average of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image006.gif" alt="" width="12" height="13"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image007.gif" alt="" width="15" height="17"> norms for dimensions <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> = 100, 500, 1000. Weighting is done with the parameter <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image020.gif" alt="" width="24" height="26"> as follows: <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image021_.gif" alt="" width="180" height="16"> The weighting parameter <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image020.gif" alt="" width="24" height="26"> is a function of dimension <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> to make the best approximation of the <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="15" height="17"> norm by the weighted average of the <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image006.gif" alt="" width="12" height="13"> and <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image007.gif" alt="" width="15" height="17"> norms, i.e., <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image023.gif" alt="" width="100" height="15">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image024.gif" alt="" width="100" height="15">, <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image025.gif" alt="" width="110" height="15">, see Gotoh and Uryasev (2013).
+Problem 3 solves projection problems with square of <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image005.gif" alt="" width="15" height="17"> norm for dimensions <img src="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2013/05/CS_Projection_CVaR_Norm_cvar_comp_abs_clip_image022.gif" alt="" width="11" height="12"> = 100, 500, 1000.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+References</strong>
+• Pavlikov K, and S. Uryasev (2013): CVaR Absolute Norm and Applications in Optimization.
+Research Report # 2013-1.n• Rockafellar, R.T. and S. Uryasev (2013): The Fundamental Risk Quadrangle in RisknManagement, Optimization, and Statistical Estimation. Surveys in Operations Research andnManagement Science, 18 (to appear).n• Rockafellar, R. T. and Uryasev, S. (2000), “Optimization of conditional value-at-risk”,
+Journal of Risk , Vol. 2, pp. 21–41.n• Gotoh, J. and S. Uryasev (2013): Approximation of Euclidean norm by LP-representablennorms and applications. Draft paper.</div>
 </div>
 </div>
 

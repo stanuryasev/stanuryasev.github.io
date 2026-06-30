@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="nBack to main page Case study background and formulation of problems Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG Python,">
+    <meta name="description" content="Back to main page Case study background and formulation of problems Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG Python, a">
     <title>Case Study: Support Vector Regression: Risk Quadrangle Framework — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -26,7 +27,7 @@
 
     <h1>Case Study: Support Vector Regression: Risk Quadrangle Framework</h1>
 
-n<p><a href="/research/testproblems/">Back to main page</a><br /><a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2022/12/Case_Study__SVR.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and formulation of problems</strong></span></a></p>
+<p><a href="/research/testproblems/">Back to main page</a><br /><a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2022/12/Case_Study__SVR.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and formulation of problems</strong></span></a></p>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2023/01/PSG_Python_2.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Python</span></a>, and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong><br />Problem 1: Nu-SVR as Error Minimization (primal) </strong><br />Minimize (1-alpha)*cvar_risk + quadratic<br />Value:<br />var_risk<br />——————————————————————————————<br />quadratic = quadratic function specified by a matrix_quadratic<br />cvar_risk = conditional value-at-risk specified by an abs(matrix of scenarios)<br />var_risk = value-at-risk specified by an abs(matrix of scenarios)<br />——————————————————————————————<br />Data and solution in different environments:nn
 
@@ -278,7 +279,7 @@ n<p><a href="/research/testproblems/">Back to main page</a><br /><a href="https:
 </table>
 </div>
 
-<p><strong>CASE STUDY SUMMARY<br></strong><br>This case study conducts Support Vector Regression (SVR) as regularized error minimization, regularized deviation minimization, and constrained quadratic programming (CQP) problem on simulated data (1000 observations), cf. [1].<br>Specifically, four equivalent implementations of SVR are considered (cf. Proposition 4.2 and Corollary 4.5 in [1] for the proof of equivalence ):<br>1. The CVaR Norm plus quadratic regularization penalty is minimized.  The CVaR  Norm is calculated as the superposition of the  CVaR  Risk and the absolute value of regression residuals (i.e., the absolute value of the standard PSG linear losses).<br>2. The Partial Moment function plus quadratic regularization penalty is minimized.<br>3. Convex combination of two CVaR deviations plus quadratic regularization penalty is minimized. The intercept is calculated as the average of two corresponding symmetric quantiles.<br>4. QP problem (dual to the CVaR Norm plus quadratic regularization penalty minimization) is solved. The solution to the primal problem is constructed.  <br><strong><br>References</strong><br>[1] Malandii, A. and S. Uryasev. Support Vector Regression: Risk Quadrangle Framework, Jan 2023, <strong><a href="https://arxiv.org/abs/2212.09178">arXiv:2212.09178</a></strong> </p>n
+<p><strong>CASE STUDY SUMMARY<br></strong><br>This case study conducts Support Vector Regression (SVR) as regularized error minimization, regularized deviation minimization, and constrained quadratic programming (CQP) problem on simulated data (1000 observations), cf. [1].<br>Specifically, four equivalent implementations of SVR are considered (cf. Proposition 4.2 and Corollary 4.5 in [1] for the proof of equivalence ):<br>1. The CVaR Norm plus quadratic regularization penalty is minimized.  The CVaR  Norm is calculated as the superposition of the  CVaR  Risk and the absolute value of regression residuals (i.e., the absolute value of the standard PSG linear losses).<br>2. The Partial Moment function plus quadratic regularization penalty is minimized.<br>3. Convex combination of two CVaR deviations plus quadratic regularization penalty is minimized. The intercept is calculated as the average of two corresponding symmetric quantiles.<br>4. QP problem (dual to the CVaR Norm plus quadratic regularization penalty minimization) is solved. The solution to the primal problem is constructed.  <br><strong><br>References</strong><br>[1] Malandii, A. and S. Uryasev. Support Vector Regression: Risk Quadrangle Framework, Jan 2023, <strong><a href="https://arxiv.org/abs/2212.09178">arXiv:2212.09178</a></strong> </p>
 
     <footer>
         &copy; Stan Uryasev &nbsp;|&nbsp; Applied Mathematics and Statistics, Stony Brook University

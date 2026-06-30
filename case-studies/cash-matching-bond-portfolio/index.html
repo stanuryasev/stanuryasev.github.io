@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="Back to main page  Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Subr">
+    <meta name="description" content="Back to main page   Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Sub">
     <title>Case Study: Cash Matching Bond Portfolio — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -27,12 +28,18 @@
     <h1>Case Study: Cash Matching Bond Portfolio</h1>
 
 <a href="/research/testproblems/">Back to main page</a>
+
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2014/04/CS_Cash_Matching_Bond_Portfolio_Linear_Linearmulti_Max_risk_.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <strong>
-</strong><strong></strong><strong></strong><strong>PROBLEM 1: (Linear Programming) Surplus (extra cash) is not reinvested.</strong>nMinimize Linear (minimizing portfolio cost)nsubject tonLinearmulti &lt; = 0 (constraints assuring zero underperformance of replicating portfolio)nBox constraints (lower bounds on positions)
-</div>n——————————————————————
+
+</strong><strong></strong><strong></strong><strong>PROBLEM 1: (Linear Programming) Surplus (extra cash) is not reinvested.</strong>
+Minimize Linear (minimizing portfolio cost)nsubject tonLinearmulti &lt; = 0 (constraints assuring zero underperformance of replicating portfolio)
+Box constraints (lower bounds on positions)
+
+</div>
+——————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -75,9 +82,13 @@
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 2: (Using Maximum Risk, max_risk, PSG function) Surplus (extra cash) is not reinvested. This problem is equivalent to Problem 1.n</strong>nMinimize Linear (minimizing portfolio cost)nsubject tonMax_risk &lt; = 0 (constraints assuring zero underperformance of replicating portfolio)nBox constraints (lower bounds on positions)
+
+<strong>PROBLEM 2: (Using Maximum Risk, max_risk, PSG function) Surplus (extra cash) is not reinvested. This problem is equivalent to Problem 1.
+</strong>
+Minimize Linear (minimizing portfolio cost)nsubject tonMax_risk &lt; = 0 (constraints assuring zero underperformance of replicating portfolio)
+Box constraints (lower bounds on positions)
 ——————————————————————
-</div>
+n</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -126,8 +137,13 @@
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 3: (Linear Programming) Extra cash is carried forward at interest r.</strong>nMinimize Linear (minimizing portfolio cost)nsubject tonLinearmulti = 0 (cash balance constraints)nBox constraints (lower bounds on positions)
-</div>n——————————————————————
+
+<strong>PROBLEM 3: (Linear Programming) Extra cash is carried forward at interest r.</strong>
+Minimize Linear (minimizing portfolio cost)nsubject tonLinearmulti = 0 (cash balance constraints)
+Box constraints (lower bounds on positions)
+
+</div>
+——————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -176,8 +192,14 @@
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
-<strong>PROBLEM 4: (Using Maximum Risk, max_risk, PSG function ) Extra cash is carried forward at interest r.n</strong>nMinimize Linear (minimizing portfolio cost)nsubject tonMax_risk &lt; = 0 (constraints assuring zero underperformance of replicating portfolio)nBox constraints (lower bounds on positions)
-</div>n——————————————————————
+
+<strong>PROBLEM 4: (Using Maximum Risk, max_risk, PSG function ) Extra cash is carried forward at interest r.
+</strong>
+Minimize Linear (minimizing portfolio cost)nsubject tonMax_risk &lt; = 0 (constraints assuring zero underperformance of replicating portfolio)
+Box constraints (lower bounds on positions)
+
+</div>
+——————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -226,9 +248,14 @@
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+
 <strong>CASE STUDY SUMMARY</strong>
-This case study demonstrates several optimization setups for a simple cash matching problem described in Luenberger (1998), p.108. The model matches cash obligations over some periods with payments from a portfolio of bonds. Bonds of various maturities pay coupons as well as face values at different time periods. We design a portfolio providing cash flows to cover liabilities at all periods and minimizing the initial portfolio cost. Four optimization problems are formulated. The first and the second problems disregard surplus cash at every time period, i.e., surplus is not reinvested. The first problem is a Linear Programming problem. The second problem, which is equivalent to the first problem, is formulated with PSG nonlinear function max_risk. The third and the fourth problems carry forward extra cash with some interest. This carry-over is done with additional carry-over variables which can be interpreted as artificial bonds. The third problem is a Linear Programming problem. The fourth problem, which is equivalent to the third problem, is formulated with the PSG nonlinear function max_risk.n<strong>References</strong>
+
+This case study demonstrates several optimization setups for a simple cash matching problem described in Luenberger (1998), p.108. The model matches cash obligations over some periods with payments from a portfolio of bonds. Bonds of various maturities pay coupons as well as face values at different time periods. We design a portfolio providing cash flows to cover liabilities at all periods and minimizing the initial portfolio cost. Four optimization problems are formulated. The first and the second problems disregard surplus cash at every time period, i.e., surplus is not reinvested. The first problem is a Linear Programming problem. The second problem, which is equivalent to the first problem, is formulated with PSG nonlinear function max_risk. The third and the fourth problems carry forward extra cash with some interest. This carry-over is done with additional carry-over variables which can be interpreted as artificial bonds. The third problem is a Linear Programming problem. The fourth problem, which is equivalent to the third problem, is formulated with the PSG nonlinear function max_risk.
+<strong>References</strong>
+
 • Luenberger, D.G. (1998): Investment Science, Oxford University Press, 494 p.
+
 </div>
 
     <footer>

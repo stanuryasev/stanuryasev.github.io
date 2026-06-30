@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -28,9 +29,13 @@
 
 <a href="/research/testproblems/">Back to main page</a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2020/07/Case_Study_Shortest_Path_background_070720_4-1.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Run_File_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.nOptimization package Gurobi should be installed to run this case study.</div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 1: problem_shortest_path_average</strong>
-<strong>(formulation with Boolean variables)</strong>nMinimize Avg (minimizing expected cost (length) of a path)nsubject tonLinearmulti = 0 (path representation constraints)nBox constraints (defines Boolean variables)Calculate:ncvar_risk_gnbPOE_gnvar_risk_gnpr_pen_g
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Run_File_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.
+Optimization package Gurobi should be installed to run this case study.</div>
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM 1: problem_shortest_path_average</strong>
+<strong>(formulation with Boolean variables)</strong>
+Minimize Avg (minimizing expected cost (length) of a path)nsubject tonLinearmulti = 0 (path representation constraints)
+Box constraints (defines Boolean variables)Calculate:ncvar_risk_gnbPOE_gnvar_risk_gnpr_pen_g
 ——————————————————————–
 Avg = AveragenLinearmulti = System of linear constraintsncvar_risk_g = CVaR for GainnbPOE_g = Buffered Probability of Exceedance for Gainnvar_risk_g = VaR for Gainnpr_pen_g = Probability of Exceedance for GainnBox constraints = constraints on individual decision variables
 ——————————————————————–
@@ -80,7 +85,10 @@ Avg = AveragenLinearmulti = System of linear constraintsncvar_risk_g = CVaR for 
 </tr>
 </tbody>
 </table>
-</div>nDownload other datasets in Run-File Environment.n<a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2016/05/Importing_Problem_from_Run-File_to_PSG_MATLAB.pdf">Instructions</a> for importing problems from Run-File to PSG MATLAB.n<table>
+</div>
+Download other datasets in Run-File Environment.
+<a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2016/05/Importing_Problem_from_Run-File_to_PSG_MATLAB.pdf">Instructions</a> for importing problems from Run-File to PSG MATLAB.
+<table>
 <tbody>
 <tr>
 <th colspan="4">Problem Datasets</th>
@@ -105,7 +113,9 @@ Avg = AveragenLinearmulti = System of linear constraintsncvar_risk_g = CVaR for 
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 2: problem_the_most_shortest_path_pr_pen</strong>
-<strong>(formulation with Boolean variables)</strong>nMinimize pr_pen (Probability of Exceedance (POE) of path cost (length) of a specified threshold)nsubject tonLinearmulti = 0 (path representation constraints)nBox constraints (defines Boolean variables)nnpr_pen = Probability of ExceedancenLinearmulti = System of linear constraintsnBox constraints = constraints on individual decision variablesnnData and solution in Run-File Environmentn<table style="height: 224px;">
+<strong>(formulation with Boolean variables)</strong>
+Minimize pr_pen (Probability of Exceedance (POE) of path cost (length) of a specified threshold)nsubject tonLinearmulti = 0 (path representation constraints)
+Box constraints (defines Boolean variables)nnpr_pen = Probability of ExceedancenLinearmulti = System of linear constraintsnBox constraints = constraints on individual decision variablesnnData and solution in Run-File Environmentn<table style="height: 224px;">
 <tbody>
 <tr style="height: 72px;">
 <th style="width: 365px; height: 72px;" colspan="4">Problem Datasets</th>
@@ -247,8 +257,11 @@ Avg = AveragenLinearmulti = System of linear constraintsncvar_risk_g = CVaR for 
 </tbody>
 </table>
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 3: problem_the_most_shortest_path_bPOE</strong>
-<strong>(formulation with Boolean variables)</strong>nMinimize bpoe (Buffered Probability of Exceedance) of path cost (length) with a specified threshold)nsubject tonLinearmulti = 0 (path representation constraints)nBox constraints (defines Boolean variables)nnbpoe= Probability of ExceedancenLinearmulti = System of linear constraintsnBox constraints = constraints on individual decision variablesnnData and solution in Run-File Environmentn<table style="height: 224px;">
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM 3: problem_the_most_shortest_path_bPOE</strong>
+<strong>(formulation with Boolean variables)</strong>
+Minimize bpoe (Buffered Probability of Exceedance) of path cost (length) with a specified threshold)nsubject tonLinearmulti = 0 (path representation constraints)
+Box constraints (defines Boolean variables)nnbpoe= Probability of ExceedancenLinearmulti = System of linear constraintsnBox constraints = constraints on individual decision variablesnnData and solution in Run-File Environmentn<table style="height: 224px;">
 <tbody>
 <tr style="height: 72px;">
 <th style="width: 365px; height: 72px;" colspan="4">Problem Datasets</th>
@@ -393,7 +406,9 @@ Avg = AveragenLinearmulti = System of linear constraintsncvar_risk_g = CVaR for 
 </div>
 <div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 5: problem_alpha_shortest_path_cvar</strong>
-<strong>(formulation with Boolean variables)</strong>nMinimize Cvar_risk (Conditional Value-at-Risk (CVaR) of the path cost with a specified confidence level)nsubject tonLinearmulti = 0 (path representation constraints)nBox constraints (defines Boolean variables)
+<strong>(formulation with Boolean variables)</strong>
+Minimize Cvar_risk (Conditional Value-at-Risk (CVaR) of the path cost with a specified confidence level)nsubject tonLinearmulti = 0 (path representation constraints)
+Box constraints (defines Boolean variables)
 ——————————————————————–
 Cvar_risk = Conditional Value-at-RisknLinearmulti = System of linear constraintsnBox constraints = constraints on individual decision variables
 ——————————————————————–
@@ -544,7 +559,10 @@ Data and solution in Run-File Environmentn<table style="height: 224px;">
 </div>
 </div>
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>CASE STUDY SUMMARYn</strong>nA graph consists of a set of vertices (nodes) and arcs (edges) connecting vertices. In deterministic setting each arc is characterized by a single cost. Depending on the application, the cost may be travel time, financial cost, etc. The cost of a path is the sum of the costs of arcs in the path. The deterministic shortest path problem finds a path from a starting point to a final point with minimal cost.This case study solves problems with stochastic costs of arcs (i.e., cost of each arc is a random value). We formulated problems for finding a path with the minimal:nn• Expected cost (length);n• Probability of Exceedance (POE) of path cost with a specified threshold;n• Buffered Probability of Exceedance (bPOE) of path cost with a specified threshold.n• Value-at-Risk (VaR) of the path cost with a specified confidence level;n• Conditional Value-at-Risk (CVaR) of the path cost with a specified confidence level;
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+CASE STUDY SUMMARYn</strong>
+A graph consists of a set of vertices (nodes) and arcs (edges) connecting vertices. In deterministic setting each arc is characterized by a single cost. Depending on the application, the cost may be travel time, financial cost, etc. The cost of a path is the sum of the costs of arcs in the path. The deterministic shortest path problem finds a path from a starting point to a final point with minimal cost.This case study solves problems with stochastic costs of arcs (i.e., cost of each arc is a random value). We formulated problems for finding a path with the minimal:nn• Expected cost (length);n• Probability of Exceedance (POE) of path cost with a specified threshold;n• Buffered Probability of Exceedance (bPOE) of path cost with a specified threshold.n• Value-at-Risk (VaR) of the path cost with a specified confidence level;n• Conditional Value-at-Risk (CVaR) of the path cost with a specified confidence level;
+
 </div>
 </div>
 </div>

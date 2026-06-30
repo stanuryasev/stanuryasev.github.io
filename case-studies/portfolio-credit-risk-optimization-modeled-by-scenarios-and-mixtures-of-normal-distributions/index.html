@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="Back to main page  Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Subr">
+    <meta name="description" content="Back to main page   Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Sub">
     <title>Case Study: Portfolio Credit-Risk Optimization Modeled by Scenarios and Mixtures of Normal Distributions — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -27,14 +28,19 @@
     <h1>Case Study: Portfolio Credit-Risk Optimization Modeled by Scenarios and Mixtures of Normal Distributions</h1>
 
 <a href="/research/testproblems/">Back to main page</a>
+
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2011/12/CS_Portfolio_Credit-Risk_Optimization.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
-<strong>PROBLEM 1: problem_var_LLN</strong>nMinimize Var_risk (minimizing Value-at-Risk)nsubject tonLinear = 1 (budget constraint)nLinear ≥ Const (portfolio return constraint)nBox constraints (bounds on decision variables)
+<strong>
+PROBLEM 1: problem_var_LLN</strong>
+Minimize Var_risk (minimizing Value-at-Risk)nsubject tonLinear = 1 (budget constraint)
+Linear ≥ Const (portfolio return constraint)
+Box constraints (bounds on decision variables)
 ——————————————————————–
 Var = VaR Risk for LossnBox constraints = constraints on individual decision variables
 ——————————————————————–
-<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
+n<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -83,10 +89,14 @@ Var = VaR Risk for LossnBox constraints = constraints on individual decision var
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 2: problem_cvar_LLN </strong>nMinimize Cvar_risk (minimizing Conditional Value-at-Risk)nsubject tonLinear = 1 (budget constraint)nLinear ≥ Const (portfolio return constraint)nBox constraints (bounds on decision variables)
+<strong>PROBLEM 2: problem_cvar_LLN </strong>
+Minimize Cvar_risk (minimizing Conditional Value-at-Risk)nsubject tonLinear = 1 (budget constraint)
+Linear ≥ Const (portfolio return constraint)
+Box constraints (bounds on decision variables)
 ——————————————————————–
-Cvar_risk = CVaR Risk for LossnBox constraints = constraints on individual decision variables</div>n——————————————————————–
-<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
+Cvar_risk = CVaR Risk for LossnBox constraints = constraints on individual decision variables</div>
+——————————————————————–
+n<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -135,10 +145,14 @@ Cvar_risk = CVaR Risk for LossnBox constraints = constraints on individual decis
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 3: problem_avg_var_CLT</strong>nMinimize Avg_var_risk_ni (minimizing Average Value-at-Risk for Normal Independent Distribution)nsubject tonLinear = 1 (budget constraint)nLinear ≥ Const (portfolio return constraint)nBox constraints (bounds on decision variables)
+<strong>PROBLEM 3: problem_avg_var_CLT</strong>
+Minimize Avg_var_risk_ni (minimizing Average Value-at-Risk for Normal Independent Distribution)nsubject tonLinear = 1 (budget constraint)
+Linear ≥ Const (portfolio return constraint)
+Box constraints (bounds on decision variables)
 ——————————————————————–
-Avg_var_risk_ni = Average Value-at-Risk for Multivariate Normal Independent DistributionnBox constraints = constraints on individual decision variables</div>n——————————————————————–
-<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
+Avg_var_risk_ni = Average Value-at-Risk for Multivariate Normal Independent DistributionnBox constraints = constraints on individual decision variables</div>
+——————————————————————–
+n<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -187,10 +201,14 @@ Avg_var_risk_ni = Average Value-at-Risk for Multivariate Normal Independent Dist
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 4: problem_avg_cvar_CLT</strong>nMinimize Avg_cvar (minimizing Average Conditional Value-at-Risk for Normal Independent Distribution)nsubject tonLinear = 1 (budget constraint)nLinear ≥ Const (portfolio return constraint)nBox constraints (bounds on decision variables)
+<strong>PROBLEM 4: problem_avg_cvar_CLT</strong>
+Minimize Avg_cvar (minimizing Average Conditional Value-at-Risk for Normal Independent Distribution)nsubject tonLinear = 1 (budget constraint)
+Linear ≥ Const (portfolio return constraint)
+Box constraints (bounds on decision variables)
 ——————————————————————–
-Avg_cvar_risk_ni = Average Conditional Value-at-Risk for Multivariate Normal Independent DistributionnBox constraints = constraints on individual decision variables</div>n——————————————————————–
-<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
+Avg_cvar_risk_ni = Average Conditional Value-at-Risk for Multivariate Normal Independent DistributionnBox constraints = constraints on individual decision variables</div>
+——————————————————————–
+n<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -239,10 +257,15 @@ Avg_cvar_risk_ni = Average Conditional Value-at-Risk for Multivariate Normal Ind
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 5: problem_avg_var_CLT (alternative formulation)</strong>nMinimize Xvar (minimizing Average Value-at-Risk for Normal Independent Distribution using alternative formulation of Problem 3)nsubject tonLinear = 1 (budget constraint)nAvg_pr_pen_ni ≤ 1-α (probability constraint)nLinear ≥ Const (portfolio return constraint)nBox constraints (bounds on decision variables)
+<strong>PROBLEM 5: problem_avg_var_CLT (alternative formulation)</strong>
+Minimize Xvar (minimizing Average Value-at-Risk for Normal Independent Distribution using alternative formulation of Problem 3)nsubject tonLinear = 1 (budget constraint)
+Avg_pr_pen_ni ≤ 1-α (probability constraint)
+Linear ≥ Const (portfolio return constraint)
+Box constraints (bounds on decision variables)
 ——————————————————————–
-Xvar = additional variable which is equal to VaR at optimalitynAvg_pr_pen_ni = Average Probability Exceeding Penalty for Loss Normal IndependentnBox constraints = constraints on individual decision variablesnBox constraints = constraints on individual decision variables</div>n——————————————————————–
-<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
+Xvar = additional variable which is equal to VaR at optimalitynAvg_pr_pen_ni = Average Probability Exceeding Penalty for Loss Normal IndependentnBox constraints = constraints on individual decision variablesnBox constraints = constraints on individual decision variables</div>
+——————————————————————–
+n<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -291,10 +314,14 @@ Xvar = additional variable which is equal to VaR at optimalitynAvg_pr_pen_ni = A
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM 6: problem_avg_cvar_CLT (alternative formulation)</strong>nMinimize Xvar + 1/(1-α )*Avg_pm_pen_ni (minimizing Average Conditional Value-at-Risk for Normal Independent Distribution using alternative formulation of Problem 4)nsubject tonLinear = 1 (budget constraint)nLinear ≥ Const (portfolio return constraint)nBox constraints (bounds on decision variables)
+<strong>PROBLEM 6: problem_avg_cvar_CLT (alternative formulation)</strong>
+Minimize Xvar + 1/(1-α )*Avg_pm_pen_ni (minimizing Average Conditional Value-at-Risk for Normal Independent Distribution using alternative formulation of Problem 4)nsubject tonLinear = 1 (budget constraint)
+Linear ≥ Const (portfolio return constraint)
+Box constraints (bounds on decision variables)
 ——————————————————————–
-Xvar = additional variable which is equal to VaR at optimalitynAvg_pm_pen_ni = Average Partial Moment Penalty for Loss Normal IndependentnBox constraints = constraints on individual decision variables</div>n——————————————————————–
-<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
+Xvar = additional variable which is equal to VaR at optimalitynAvg_pm_pen_ni = Average Partial Moment Penalty for Loss Normal IndependentnBox constraints = constraints on individual decision variables</div>
+——————————————————————–
+n<span style="color: red;">NOTE: LARGE DATA FILES; SEVERAL MINUTES MAY BE NEEDED FOR DOWNLOADING</span>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -337,7 +364,12 @@ Xvar = additional variable which is equal to VaR at optimalitynAvg_pm_pen_ni = A
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>CASE STUDY SUMMARY</strong>
-This case study evaluates several alternative formulations of optimization problems for minimizing credit risk of a portfolio of financial contracts with different counterparties. The formulations and numerical runs (both models and data) are motivated by paper Iscoe et al. (2009). This paper considers various approximations to the conditional portfolio loss distribution and formulate VaR and CVaR minimization problems for each case. Formulations exploit the conditional independence of counterparties under a structural credit risk model. The case studies consider the “conventional” scenarios and the mixture of normal distribution approaches for modeling the conditional loss distribution.nSimilar to Iscoe et al. (2009) we find four optimal portfolios for minimization problems with different but closely risk measures. Problems 1,2 consider quantile-based risk measures, var_risk, cvar_risk with “conventional” scenarios and Problems 3,4 consider avg_var_risk_ni, avg_cvar_risk_ni calculating mixtures of normal independent distributions.nAdditionally, Problems 3,4 involving avg_var_risk_ni and avg_cvar_risk_ni were equivalently reformulated with functions avg_pr_pen_ni, avg_pm_pen_ni. These formulations help to understand relation between “avg_...” functions.nCase study demonstrates that PSG optimization provides results comparable to Iscoe, I., et al. (2009).
+
+This case study evaluates several alternative formulations of optimization problems for minimizing credit risk of a portfolio of financial contracts with different counterparties. The formulations and numerical runs (both models and data) are motivated by paper Iscoe et al. (2009). This paper considers various approximations to the conditional portfolio loss distribution and formulate VaR and CVaR minimization problems for each case. Formulations exploit the conditional independence of counterparties under a structural credit risk model. The case studies consider the “conventional” scenarios and the mixture of normal distribution approaches for modeling the conditional loss distribution.
+Similar to Iscoe et al. (2009) we find four optimal portfolios for minimization problems with different but closely risk measures. Problems 1,2 consider quantile-based risk measures, var_risk, cvar_risk with “conventional” scenarios and Problems 3,4 consider avg_var_risk_ni, avg_cvar_risk_ni calculating mixtures of normal independent distributions.
+Additionally, Problems 3,4 involving avg_var_risk_ni and avg_cvar_risk_ni were equivalently reformulated with functions avg_pr_pen_ni, avg_pm_pen_ni. These formulations help to understand relation between “avg_...” functions.
+Case study demonstrates that PSG optimization provides results comparable to Iscoe, I., et al. (2009).
+
 </div>
 </div>
 

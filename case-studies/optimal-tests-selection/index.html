@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="Back to main page  Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Subr">
+    <meta name="description" content="Back to main page   Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Sub">
     <title>Case Study: Optimal Tests Selection — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -26,10 +27,14 @@
 
     <h1>Case Study: Optimal Tests Selection</h1>
 
-<a href="https://uryasev.ams.stonybrook.edu/research/testproblems/">Back to main page</a>
+<a href="/research/testproblems/">Back to main page</a>
+
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2011/12/CS_Tests_Assignhment.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 1: problem_deterministic_LP_model</strong>nMaximize Linear (maximizing the value of selected tests)nsubject tonLinear ≤ Const1 (constraint on resources)nBox constraints (constraints on decision variables)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM 1: problem_deterministic_LP_model</strong>
+Maximize Linear (maximizing the value of selected tests)nsubject tonLinear ≤ Const1 (constraint on resources)
+Box constraints (constraints on decision variables)
 ——————————————————————–————–—–
 Box constraints = constraints on individual decision variables
 ——————————————————————–————–—–
@@ -77,7 +82,10 @@ nData and solution in Run-File Environmentn<table>
 </tbody>
 </table>
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 2: problem_robust_model </strong>nMaximize Linear (maximizing the value of selected tests)nsubject tonLinear + Cvar_comp_pos ≤ Const2 (constraint on resources)nBox constraints (constraints on decision variables)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM 2: problem_robust_model </strong>
+Maximize Linear (maximizing the value of selected tests)nsubject tonLinear + Cvar_comp_pos ≤ Const2 (constraint on resources)
+Box constraints (constraints on decision variables)
 ——————————————————————–————–——
 Cvar_comp_pos = Cvar Component PositivenBox constraints = constraints on individual decision variables
 ——————————————————————–————–——
@@ -128,7 +136,11 @@ Cvar_comp_pos = Cvar Component PositivenBox constraints = constraints on individ
 </tbody>
 </table>
 </div>
-<strong>OTE:</strong> Problem statements can be simplified using MultiConstraint.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM 3: problem_stochastic_model </strong>nMaximize Linear (maximizing the value of selected tests)nsubject tonPrmulti_pen_ni_g ≤ Const3 (constraints on Probability Exceeding Penalty for Gain Multiple Normal Independent)nBox constraints (constraints on decision variables)
+<strong>NOTE:</strong> Problem statements can be simplified using MultiConstraint.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM 3: problem_stochastic_model </strong>
+Maximize Linear (maximizing the value of selected tests)nsubject tonPrmulti_pen_ni_g ≤ Const3 (constraints on Probability Exceeding Penalty for Gain Multiple Normal Independent)
+Box constraints (constraints on decision variables)
 ——————————————————————–————–————–—–————–———
 Prmulti_pen_ni_g = Probability Exceeding Penalty for Gain Multiple Normal IndependentnBox constraints = constraints on individual decision variables
 ——————————————————————–————–————–—–————–———
@@ -179,7 +191,9 @@ Prmulti_pen_ni_g = Probability Exceeding Penalty for Gain Multiple Normal Indepe
 </tbody>
 </table>
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>CASE STUDY SUMMARYn</strong>nThis case study considers the problem of optimal selection of tests subject to several constraints on available resources (e.g. money, times, and people). There are no partial tests: each test is assumed to be either conducted or not conducted. If each resource estimate is assumed to be accurate, then the problem of optimal selection of tests is formulated as Deterministic Linear Programming Assignment model with boolean decision variables. To take into account uncertainty in resource estimates two models are used: robust model and the stochastic model. The Robust model conservatively increases the need in each resource by 20% of its average consumption by 20% largest consumers. The Stochastic model is based on the assumption that resource consumption by each test is independent normally distributed random value. The Robust and Stochastic models provide more realistic solution of the problem of optimal selection of tests, than the Deterministic Linear Programming model. Moreover, the Stochastic model reduces many constraints to one constraint, and provides possibility of sensitivity analysis.</div>
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+CASE STUDY SUMMARYn</strong>
+This case study considers the problem of optimal selection of tests subject to several constraints on available resources (e.g. money, times, and people). There are no partial tests: each test is assumed to be either conducted or not conducted. If each resource estimate is assumed to be accurate, then the problem of optimal selection of tests is formulated as Deterministic Linear Programming Assignment model with boolean decision variables. To take into account uncertainty in resource estimates two models are used: robust model and the stochastic model. The Robust model conservatively increases the need in each resource by 20% of its average consumption by 20% largest consumers. The Stochastic model is based on the assumption that resource consumption by each test is independent normally distributed random value. The Robust and Stochastic models provide more realistic solution of the problem of optimal selection of tests, than the Deterministic Linear Programming model. Moreover, the Stochastic model reduces many constraints to one constraint, and provides possibility of sensitivity analysis.</div>
 </div>
 </div>
 

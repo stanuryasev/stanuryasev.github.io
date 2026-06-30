@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -31,12 +32,20 @@
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">If you want to run this Case Study click on the following link to extract M-files and problem statement to the directoryn...\PSG\MATLAB\CS_Sparse_Reconstruction_SPARCO: <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2011/12/CS_Sparse_Reconstruction_Sparco_For_MatLab.zip">M-files for CS_Sparse_Reconstruction_Sparco_Matlab</a></div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM: L2 form</strong>nMinimize 0.5*Quadratic + Const*Linear (minimizing L2-error of regression plus linear regularization term)nsubject tonBox constraints (bounds on variables)
+<strong>
+PROBLEM: L2 form</strong>
+Minimize 0.5*Quadratic + Const*Linear (minimizing L2-error of regression plus linear regularization term)nsubject tonBox constraints (bounds on variables)
 ——————————————————————–
 Quadratic = External Quadratic Penalty FunctionnBox constraints = constraints on individual decision variables
 ——————————————————————–
-<strong>Problem "problem_2_L2_dblExt" </strong>
-Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, chap. Wavelab and reproducible research.nSpringer-Verlag, Berlin, New York (1995). URL <a href="https://citeseer.ist.psu.edu/article/buckheit95wavelab.html">https://citeseer.ist.psu.edu/article/buckheit95wavelab.html</a></li>n 	<li>Chen, S.S., Donoho, D.L., Saunders, M.A.: Atomic decomposition by basis pursuit. SIAM J. Sci. Comput. 20(1),n33-61 (1998). URL <a href="https://epubs.siam.org/doi/abs/10.1137/S003614450037906X">https://epubs.siam.org/doi/abs/10.1137/S003614450037906X</a></li>n 	<li>Donoho, D.L., Johnstone, I.M.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81(3), 425-455 (1994).nURL <a href="https://citeseer.ist.psu.edu/donoho93ideal.html">https://citeseer.ist.psu.edu/donoho93ideal.html</a></li>
+n<strong>Problem "problem_2_L2_dblExt" </strong>
+
+Sources of Datan<ul>
+ 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, chap. Wavelab and reproducible research.
+Springer-Verlag, Berlin, New York (1995). URL <a href="https://citeseer.ist.psu.edu/article/buckheit95wavelab.html">https://citeseer.ist.psu.edu/article/buckheit95wavelab.html</a></li>
+ 	<li>Chen, S.S., Donoho, D.L., Saunders, M.A.: Atomic decomposition by basis pursuit. SIAM J. Sci. Comput. 20(1),n33-61 (1998). URL <a href="https://epubs.siam.org/doi/abs/10.1137/S003614450037906X">https://epubs.siam.org/doi/abs/10.1137/S003614450037906X</a></li>
+ 	<li>Donoho, D.L., Johnstone, I.M.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81(3), 425-455 (1994).
+URL <a href="https://citeseer.ist.psu.edu/donoho93ideal.html">https://citeseer.ist.psu.edu/donoho93ideal.html</a></li>
 </ul>
 <table>
 <tbody>
@@ -100,7 +109,13 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_3_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).nURL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>n 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:nSparco: A testing framework for sparse reconstruction.nTech. Rep. TR-2007-20, Dept. Computer Science, University of British Columbia, Vancouver (2007)</li>
+<strong>Problem "problem_3_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).
+URL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>
+ 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:
+Sparco: A testing framework for sparse reconstruction.
+Tech. Rep. TR-2007-20, Dept. Computer Science, University of British Columbia, Vancouver (2007)</li>
 </ul>
 <table>
 <tbody>
@@ -164,7 +179,13 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_5_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).nURL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>n 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:nSparco: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20,nDept. Computer Science, University of British Columbia, Vancouver (2007)</li>
+<strong>Problem "problem_5_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).
+URL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>
+ 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:
+Sparco: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20,
+Dept. Computer Science, University of British Columbia, Vancouver (2007)</li>
 </ul>
 <table>
 <tbody>
@@ -228,7 +249,9 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_6_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Candes, E.J., Romberg, J.: Practical signal recovery from random projections. In: Wavelet Applicationsnin Signal and Image Processing XI, Proc. SPIE Conf. 5914. (2004)</li>
+<strong>Problem "problem_6_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Candes, E.J., Romberg, J.: Practical signal recovery from random projections. In: Wavelet Applicationsnin Signal and Image Processing XI, Proc. SPIE Conf. 5914. (2004)</li>
 </ul>
 <table>
 <tbody>
@@ -292,7 +315,9 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_7_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Candes, E., Romberg, J.: L1-magic. <a href="https://www.l1-magic.org">https://www.l1-magic.org/</a> (2007)</li>
+<strong>Problem "problem_7_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Candes, E., Romberg, J.: L1-magic. <a href="https://www.l1-magic.org">https://www.l1-magic.org/</a> (2007)</li>
 </ul>
 <table>
 <tbody>
@@ -356,7 +381,9 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_8_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Candes, E., Romberg, J.: L1-magic. <a href="https://www.l1-magic.org">https://www.l1-magic.org/</a>(2007)</li>
+<strong>Problem "problem_8_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Candes, E., Romberg, J.: L1-magic. <a href="https://www.l1-magic.org">https://www.l1-magic.org/</a>(2007)</li>
 </ul>
 <table>
 <tbody>
@@ -410,7 +437,12 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_9_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Chen, S.S., Donoho, D.L., Saunders, M.A.: Atomic decomposition by basis pursuit. SIAM J. Sci. Comput. 20(1), 33-61 (1998).nURL <a href="https://epubs.siam.org/doi/abs/10.1137/S003614450037906X">https://epubs.siam.org/doi/abs/10.1137/S003614450037906X</a></li>n 	<li>Donoho, D.L., Johnstone, I.M.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81(3), 425-455 (1994).nURL <a href="https://citeseer.ist.psu.edu/donoho93ideal.html">https://citeseer.ist.psu.edu/donoho93ideal.html</a></li>
+<strong>Problem "problem_9_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Chen, S.S., Donoho, D.L., Saunders, M.A.: Atomic decomposition by basis pursuit. SIAM J. Sci. Comput. 20(1), 33-61 (1998).
+URL <a href="https://epubs.siam.org/doi/abs/10.1137/S003614450037906X">https://epubs.siam.org/doi/abs/10.1137/S003614450037906X</a></li>
+ 	<li>Donoho, D.L., Johnstone, I.M.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81(3), 425-455 (1994).
+URL <a href="https://citeseer.ist.psu.edu/donoho93ideal.html">https://citeseer.ist.psu.edu/donoho93ideal.html</a></li>
 </ul>
 <table>
 <tbody>
@@ -474,7 +506,12 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_10_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Chen, S.S., Donoho, D.L., Saunders, M.A.: Atomic decomposition by basis pursuit. SIAM J. Sci. Comput. 20(1), 33-61 (1998).nURL <a href="https://epubs.siam.org/doi/abs/10.1137/S003614450037906X">https://epubs.siam.org/doi/abs/10.1137/S003614450037906X</a></li>n 	<li>Donoho, D.L., Johnstone, I.M.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81(3), 425-455 (1994).nURL <a href="https://citeseer.ist.psu.edu/donoho93ideal.html">https://citeseer.ist.psu.edu/donoho93ideal.html</a></li>
+<strong>Problem "problem_10_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Chen, S.S., Donoho, D.L., Saunders, M.A.: Atomic decomposition by basis pursuit. SIAM J. Sci. Comput. 20(1), 33-61 (1998).
+URL <a href="https://epubs.siam.org/doi/abs/10.1137/S003614450037906X">https://epubs.siam.org/doi/abs/10.1137/S003614450037906X</a></li>
+ 	<li>Donoho, D.L., Johnstone, I.M.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81(3), 425-455 (1994).
+URL <a href="https://citeseer.ist.psu.edu/donoho93ideal.html">https://citeseer.ist.psu.edu/donoho93ideal.html</a></li>
 </ul>
 <table>
 <tbody>
@@ -538,7 +575,13 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_11_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).nURL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>n 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:nSparco: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20,nDept. Computer Science, University of British Columbia, Vancouver (2007)</li>
+<strong>Problem "problem_11_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).
+URL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>
+ 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:
+Sparco: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20,
+Dept. Computer Science, University of British Columbia, Vancouver (2007)</li>
 </ul>
 <table>
 <tbody>
@@ -592,7 +635,9 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_401_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Database of Creative Commons licensed sounds: URL <a href="https://freesound.org/">https://freesound.org/</a></li>
+<strong>Problem "problem_401_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Database of Creative Commons licensed sounds: URL <a href="https://freesound.org/">https://freesound.org/</a></li>
 </ul>
 <table>
 <tbody>
@@ -646,7 +691,9 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_402_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Database of Creative Commons licensed sounds: URL <a href="https://freesound.org/">https://freesound.org/</a></li>
+<strong>Problem "problem_402_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Database of Creative Commons licensed sounds: URL <a href="https://freesound.org/">https://freesound.org/</a></li>
 </ul>
 <table>
 <tbody>
@@ -700,7 +747,13 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_403_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).nURL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>n 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:nSparco: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20,nDept. Computer Science, University of British Columbia, Vancouver (2007)</li>
+<strong>Problem "problem_403_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Berg, E.van den, Friedlander, M.P.: SPARCO: A toolbox for testing sparse reconstruction algorithms (2008).
+URL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a></li>
+ 	<li>Berg, E.van den, Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., Yilmaz, O.:
+Sparco: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20,
+Dept. Computer Science, University of British Columbia, Vancouver (2007)</li>
 </ul>
 <table>
 <tbody>
@@ -764,7 +817,11 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_601_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Takhar, D., Laska, J.N., Wakin, M., Duarte, M., Baron, D., Sarvotham, S., Kelly, K.K., Baraniuk, R.G.:nA new camera architecture based on optical-domain compression.nIn: Proceedings of the IS&amp;T/SPIE Symposium on Electronic Imaging: Computational Imaging, vol. 6065 (2006).</li>
+<strong>Problem "problem_601_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Takhar, D., Laska, J.N., Wakin, M., Duarte, M., Baron, D., Sarvotham, S., Kelly, K.K., Baraniuk, R.G.:
+A new camera architecture based on optical-domain compression.
+In: Proceedings of the IS&amp;T/SPIE Symposium on Electronic Imaging: Computational Imaging, vol. 6065 (2006).</li>
 </ul>
 <table>
 <tbody>
@@ -828,7 +885,11 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_602_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Takhar, D., Laska, J.N., Wakin, M., Duarte, M., Baron, D., Sarvotham, S., Kelly, K.K., Baraniuk, R.G.:nA new camera architecture based on optical-domain compression.nIn: Proceedings of the IS&amp;T/SPIE Symposium on Electronic Imaging: Computational Imaging, vol. 6065 (2006).</li>
+<strong>Problem "problem_602_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Takhar, D., Laska, J.N., Wakin, M., Duarte, M., Baron, D., Sarvotham, S., Kelly, K.K., Baraniuk, R.G.:
+A new camera architecture based on optical-domain compression.
+In: Proceedings of the IS&amp;T/SPIE Symposium on Electronic Imaging: Computational Imaging, vol. 6065 (2006).</li>
 </ul>
 <table>
 <tbody>
@@ -882,7 +943,10 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_603_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Figueiredo, M., Nowak, R., Wright, S.: Gradient projection for sparse reconstruction: Application to compressednsensing and other inverse problems. Selected Topics in Signal Processing, IEEE Journal of 1(4), 586-597 (2007).nDOI 10.1109/JSTSP.2007.910281. URL <a href="https://www.lx.it.pt/~mtf/GPSR">https://www.lx.it.pt/~mtf/GPSR</a></li>
+<strong>Problem "problem_603_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Figueiredo, M., Nowak, R., Wright, S.: Gradient projection for sparse reconstruction: Application to compressednsensing and other inverse problems. Selected Topics in Signal Processing, IEEE Journal of 1(4), 586-597 (2007).
+DOI 10.1109/JSTSP.2007.910281. URL <a href="https://www.lx.it.pt/~mtf/GPSR">https://www.lx.it.pt/~mtf/GPSR</a></li>
 </ul>
 <table>
 <tbody>
@@ -946,7 +1010,10 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_701_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Figueiredo, M., Nowak, R., Wright, S.: Gradient projection for sparse reconstruction: Application to compressednsensing and other inverse problems. Selected Topics in Signal Processing, IEEE Journal of 1(4), 586-597 (2007).nDOI 10.1109/JSTSP.2007.910281. URL <a href="https://www.lx.it.pt/~mtf/GPSR">https://www.lx.it.pt/~mtf/GPSR</a></li>
+<strong>Problem "problem_701_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Figueiredo, M., Nowak, R., Wright, S.: Gradient projection for sparse reconstruction: Application to compressednsensing and other inverse problems. Selected Topics in Signal Processing, IEEE Journal of 1(4), 586-597 (2007).
+DOI 10.1109/JSTSP.2007.910281. URL <a href="https://www.lx.it.pt/~mtf/GPSR">https://www.lx.it.pt/~mtf/GPSR</a></li>
 </ul>
 <table>
 <tbody>
@@ -1000,7 +1067,10 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_702_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Figueiredo, M., Nowak, R., Wright, S.: Gradient projection for sparse reconstruction: Application to compressednsensing and other inverse problems. Selected Topics in Signal Processing, IEEE Journal of 1(4), 586-597 (2007).nDOI 10.1109/JSTSP.2007.910281. URL <a href="https://www.lx.it.pt/~mtf/GPSR">https://www.lx.it.pt/~mtf/GPSR</a></li>
+<strong>Problem "problem_702_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Figueiredo, M., Nowak, R., Wright, S.: Gradient projection for sparse reconstruction: Application to compressednsensing and other inverse problems. Selected Topics in Signal Processing, IEEE Journal of 1(4), 586-597 (2007).
+DOI 10.1109/JSTSP.2007.910281. URL <a href="https://www.lx.it.pt/~mtf/GPSR">https://www.lx.it.pt/~mtf/GPSR</a></li>
 </ul>
 <table>
 <tbody>
@@ -1064,7 +1134,14 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_902_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Hennenfent, G., Herrmann, F.J.: Sparseness-constrained data continuationnwith frames: Applications to missing tracesnand aliased signals in 2/3-D. In: SEG International Exposition and 75th Annual Meeting (2005).nURL <a href="https://library.seg.org/doi/abs/10.1190/1.2148142">https://library.seg.org/doi/abs/10.1190/1.2148142</a></li>n 	<li>Hennenfent, G., Herrmann, F.J.: Simply denoise: waveeld reconstruction via coarse nonuniform sampling.nTech. rep., UBC Earth &amp; Ocean Sciences (2007)</li>n 	<li>Herrmann, F.J., Hennenfent, G.: Non-parametric seismic data recovery with curvelet frames.nTech. rep., UBC Earth &amp; Ocean Sciences Department (2007). TR-2007-1nURL <a href="https://academic.oup.com/gji/article-abstract/173/1/233/554282">https://academic.oup.com/gji/article-abstract/173/1/233/554282</a></li>
+<strong>Problem "problem_902_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Hennenfent, G., Herrmann, F.J.: Sparseness-constrained data continuationnwith frames: Applications to missing tracesnand aliased signals in 2/3-D. In: SEG International Exposition and 75th Annual Meeting (2005).
+URL <a href="https://library.seg.org/doi/abs/10.1190/1.2148142">https://library.seg.org/doi/abs/10.1190/1.2148142</a></li>
+ 	<li>Hennenfent, G., Herrmann, F.J.: Simply denoise: waveeld reconstruction via coarse nonuniform sampling.
+Tech. rep., UBC Earth &amp; Ocean Sciences (2007)</li>
+ 	<li>Herrmann, F.J., Hennenfent, G.: Non-parametric seismic data recovery with curvelet frames.
+Tech. rep., UBC Earth &amp; Ocean Sciences Department (2007). TR-2007-1nURL <a href="https://academic.oup.com/gji/article-abstract/173/1/233/554282">https://academic.oup.com/gji/article-abstract/173/1/233/554282</a></li>
 </ul>
 <table>
 <tbody>
@@ -1108,7 +1185,10 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </tr>
 </tbody>
 </table>
-<strong>Problem "problem_903_L2_dblExt"</strong>nSources of Datan<ul>n 	<li>Dossal, C., Mallat, S.: Sparse spike deconvolution with minimum scale. In: Proceedings of Signal Processing withnAdaptive Sparse Structured Representations, pp. 123-126. Rennes, France (2005).nURL <a href="https://spars05.irisa.fr/ACTES/PS2-11.pdf">https://spars05.irisa.fr/ACTES/PS2-11.pdf</a></li>
+<strong>Problem "problem_903_L2_dblExt"</strong>
+Sources of Datan<ul>
+ 	<li>Dossal, C., Mallat, S.: Sparse spike deconvolution with minimum scale. In: Proceedings of Signal Processing withnAdaptive Sparse Structured Representations, pp. 123-126. Rennes, France (2005).
+URL <a href="https://spars05.irisa.fr/ACTES/PS2-11.pdf">https://spars05.irisa.fr/ACTES/PS2-11.pdf</a></li>
 </ul>
 <table>
 <tbody>
@@ -1174,7 +1254,15 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>CASE STUDY SUMMARYn</strong>nThis case study solves sparse reconstruction problems from SPARCO toolbox using External Functions Tool of PSG and operator given by SPARCO toolbox for implicit working with matrices.nSPARCO is a suite of <a href="https://www.cs.ubc.ca/labs/scl/sparco/Main/Problems">problems</a> for testing and benchmarking algorithms for sparse signal reconstruction, Berg et al. (2007, 2008). It is also an environment for creating new test problems. Also a suite of standard linear <a href="https://www.cs.ubc.ca/labs/scl/sparco/Main/Operators">operators</a> is provided from which new problems can be assembled. SPARCO is implemented entirely in MATLABand is self contained.nProblems included in the SPARCO toolbox were initially considered by different authors in different application areas: imaging, compressed sensing, geophysics, information compressing, etc. Relevant references can be found in the SPARCO toolbox.nThe objective of Sparse Reconstruction is to find a decision vector which has a small number of non-zero components and satisfies exactly or almost exactly a system of linear equations. There are many variants of optimization formulations of such problems. These formulations are described in paper Boyko et al. (2011).nWe solved problems included in SPARCO toolbox in so called “LASSO-O” formulation. “LASSO-O” minimizes L2-error of regression with adding to objective a regularization linear term which is equal to the sum of absolute values of variables. The regularization term is intended to “suppress" components with small values. To investigate property of solution we solved every problem with different weight of regularization linear term and calculated cardinality and max functions in optimal points. These problems can be easy solved by methods for unconstrained optimization.nSPARCO toolbox provides a set of operators to deal with data. Problems were solved in PSG MATLAB Environment with the PSG External Function subroutine to avoid generating full matrix and to save time and memory.nWe reported performance of AORDA Portfolio Safeguard (PSG) 64 bit version conducted on PC with 2.83 MHz processor.</div>
+<strong>
+CASE STUDY SUMMARYn</strong>
+This case study solves sparse reconstruction problems from SPARCO toolbox using External Functions Tool of PSG and operator given by SPARCO toolbox for implicit working with matrices.
+SPARCO is a suite of <a href="https://www.cs.ubc.ca/labs/scl/sparco/Main/Problems">problems</a> for testing and benchmarking algorithms for sparse signal reconstruction, Berg et al. (2007, 2008). It is also an environment for creating new test problems. Also a suite of standard linear <a href="https://www.cs.ubc.ca/labs/scl/sparco/Main/Operators">operators</a> is provided from which new problems can be assembled. SPARCO is implemented entirely in MATLABand is self contained.
+Problems included in the SPARCO toolbox were initially considered by different authors in different application areas: imaging, compressed sensing, geophysics, information compressing, etc. Relevant references can be found in the SPARCO toolbox.
+The objective of Sparse Reconstruction is to find a decision vector which has a small number of non-zero components and satisfies exactly or almost exactly a system of linear equations. There are many variants of optimization formulations of such problems. These formulations are described in paper Boyko et al. (2011).
+We solved problems included in SPARCO toolbox in so called “LASSO-O” formulation. “LASSO-O” minimizes L2-error of regression with adding to objective a regularization linear term which is equal to the sum of absolute values of variables. The regularization term is intended to “suppress" components with small values. To investigate property of solution we solved every problem with different weight of regularization linear term and calculated cardinality and max functions in optimal points. These problems can be easy solved by methods for unconstrained optimization.
+SPARCO toolbox provides a set of operators to deal with data. Problems were solved in PSG MATLAB Environment with the PSG External Function subroutine to avoid generating full matrix and to save time and memory.
+We reported performance of AORDA Portfolio Safeguard (PSG) 64 bit version conducted on PC with 2.83 MHz processor.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">In the problem formulations we have included several "dummy" functions multiplied by 0 (zero). Such "dummy" functions do not not impact solution process, but values of these functions are printed in the final solution file.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">For instance, you can view many "dummy" functions in the following problem formulation:</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">problem: problem_602_Relaxed_700, type = minimizenobjective: objective_new, linearize = 1nmeanabs_pen_obj(matrix_ab602)nconstraint: constraint_card, upper_bound = 700, linearize = 1npolynom_abs_S(matrix_card4096)n0 * cardn_1(1.,matrix_card4096)n0 * cardn_2(0.1,matrix_card4096)n0 * cardn_3(0.01,matrix_card4096)n0 * cardn_4(0.001,matrix_card4096)n0 * cardn_5(0.0001,matrix_card4096)n0 * cardn_6(0.00001,matrix_card4096)n0 * max_comp_pos_7(matrix_card4096)n0 * max_comp_neg_8(matrix_card4096)nbox_of_variables: lowerbounds = -40, upperbounds = +40nSolver: van, precision = 4, stages = 6, timelimit = 3600</div>
@@ -1182,7 +1270,11 @@ Sources of Datan<ul>n 	<li>Buckheit, J., Donoho, D.L.: Wavelets and Statistics, 
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Problem: solution_status = optimalnTiming: Data_loading_time = 11.97, Preprocessing_time = 0.69, Solving_time = 272.61nVariables: optimal_point = point_problem_602_Relaxed_700nObjective: objective_new = 9.71029929057e-005nConstraint: constraint_card = 6.968284830013e+002 [-3.171516998665e+000]nFunction: meanabs_pen_obj(matrix_ab602) = 9.710299290575e-005nFunction: polynom_abs_s(matrix_card4096) = 6.968284830013e+002nFunction: cardn_1(0.100000E+01,matrix_card4096) = 1.420000000000e+002nFunction: cardn_2(0.100000E+00,matrix_card4096) = 7.890000000000e+002nFunction: cardn_3(0.100000E-01,matrix_card4096) = 3.043000000000e+003nFunction: cardn_4(0.100000E-02,matrix_card4096) = 3.964000000000e+003nFunction: cardn_5(0.100000E-03,matrix_card4096) = 4.079000000000e+003nFunction: cardn_6(0.100000E-04,matrix_card4096) = 4.095000000000e+003nFunction: max_comp_pos_7(matrix_card4096) = 1.616083034336e+001nFunction: max_comp_neg_8(matrix_card4096) = 6.562008879305e+000</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <strong>
-</strong><strong></strong><strong></strong><strong>References</strong>n• Berg, E.V., Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., and O., Yilmaz (2007): SPARCO: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20, Dept. Computer Science, University of British Columbia, Vancouver.n• Berg, E.V., and M.P., Friedlander (2008): SPARCO: A toolbox for testing sparse reconstruction algorithms. URL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a>n• Boyko, N., Karamemis, G., Kuzmenko, V. and S. Uryasev (2011): Sparse Signal Reconstruction: a Cardinality Approach. Submitted for publication (<a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2014/06/Sparse_Signal_Reconstruction.pdf">Download the publication</a>).
+
+</strong><strong></strong><strong></strong><strong>References</strong>
+• Berg, E.V., Friedlander, M.P., Hennenfent, G., Herrmann, F., Saab, R., and O., Yilmaz (2007): SPARCO: A testing framework for sparse reconstruction. Tech. Rep. TR-2007-20, Dept. Computer Science, University of British Columbia, Vancouver.n• Berg, E.V., and M.P., Friedlander (2008): SPARCO: A toolbox for testing sparse reconstruction algorithms. URL <a href="https://www.cs.ubc.ca/labs/scl/sparco/">https://www.cs.ubc.ca/labs/scl/sparco/</a>
+• Boyko, N., Karamemis, G., Kuzmenko, V. and S. Uryasev (2011): Sparse Signal Reconstruction: a Cardinality Approach. Submitted for publication (<a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2014/06/Sparse_Signal_Reconstruction.pdf">Download the publication</a>).
+
 </div>
 
     <footer>

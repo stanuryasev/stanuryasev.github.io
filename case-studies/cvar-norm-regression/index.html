@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -30,7 +31,9 @@
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2014/02/CS_CVaR_Norm_Regression_022514.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and formulation of problems</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
-<strong>PROBLEM1: problem_CVaR_Risk_Abs_Style_Classification_Fidelity_Magellan</strong>nminimizing cvar_risk (using absolute value of loss)
+<strong>
+PROBLEM1: problem_CVaR_Risk_Abs_Style_Classification_Fidelity_Magellan</strong>
+minimizing cvar_risk (using absolute value of loss)
 ——————————————————————–——————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
@@ -80,7 +83,9 @@
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM2: problem_CVaR_Risk_Abs_Style_Classification_Fidelity_Magellan</strong>nminimizing cvar_risk (with doubled set of scenarios)
+<strong>
+PROBLEM2: problem_CVaR_Risk_Abs_Style_Classification_Fidelity_Magellan</strong>
+minimizing cvar_risk (with doubled set of scenarios)
 ——————————————————————–——————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
@@ -130,7 +135,9 @@
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM3: problem_CVaR_Max_Style_Classification_Fidelity_Magellan</strong>nminimizing cvar_max_risk
+<strong>
+PROBLEM3: problem_CVaR_Max_Style_Classification_Fidelity_Magellan</strong>
+minimizing cvar_max_risk
 ——————————————————————–——————
 cvar_max_risk = cvar maximum risk function
 ——————————————————————–——————
@@ -182,9 +189,15 @@ cvar_max_risk = cvar maximum risk function
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>CASE STUDY SUMMARYn</strong>nThis case study conducts Linear Regression using CVaR Norm Error function, see [1].nWe consider three alternative implementations for the same Linear Regression problem:n1. The CVaR Norm calculated as the superposition of the CVaR Risk and the absolute value of regression residuals (i.e., absolute value of the standard PSG linear losses).n2. The CVaR Norm is calculated using the standard CVaR Risk function with doubled design matrix (the designed matrix is formed by doubling the number of observations and changing the confidence level, see, Proposition 4 in [1]).n3. The CVaR Norm is calculated with PSG CVaR Max Risk function, which is CVaR of the maximum of several loss functions on every scenario.nWe used the dataset from the case study “Case Study: Style Classification with Quantile Regression”.nThe data contains returns of the Fidelity Magellan Fund as a dependent variable. Russell Value Index (RUJ), Russell 1000 Value Index (RLV), Russell 2000 Growth Index (RUO), and Russell 1000 Growth Index (RLG) are taken as independent variables. Data include 1,264 observations.</div>
+<strong>CASE STUDY SUMMARYn</strong>
+This case study conducts Linear Regression using CVaR Norm Error function, see [1].
+We consider three alternative implementations for the same Linear Regression problem:n1. The CVaR Norm calculated as the superposition of the CVaR Risk and the absolute value of regression residuals (i.e., absolute value of the standard PSG linear losses).n2. The CVaR Norm is calculated using the standard CVaR Risk function with doubled design matrix (the designed matrix is formed by doubling the number of observations and changing the confidence level, see, Proposition 4 in [1]).n3. The CVaR Norm is calculated with PSG CVaR Max Risk function, which is CVaR of the maximum of several loss functions on every scenario.
+We used the dataset from the case study “Case Study: Style Classification with Quantile Regression”.
+The data contains returns of the Fidelity Magellan Fund as a dependent variable. Russell Value Index (RUJ), Russell 1000 Value Index (RLV), Russell 2000 Growth Index (RUO), and Russell 1000 Growth Index (RLG) are taken as independent variables. Data include 1,264 observations.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>References</strong>n1. Mafusalov, A. and S. Uryasev. Conditional Value-at-Risk (CVaR) Norm: Stochastic Case. Research Report 2013-5, ISE Dept., University of Florida, 2013.</div>
+<strong>
+References</strong>
+1. Mafusalov, A. and S. Uryasev. Conditional Value-at-Risk (CVaR) Norm: Stochastic Case. Research Report 2013-5, ISE Dept., University of Florida, 2013.</div>
 </div>
 </div>
 </div>

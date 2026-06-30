@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="Back to main page  Case study background and problem formulations   Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, and PSG R. PR">
+    <meta name="description" content="Back to main page   Case study background and problem formulations    Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, and PSG R.">
     <title>Case Study: Retirement Portfolio Selection — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -27,11 +28,17 @@
     <h1>Case Study: Retirement Portfolio Selection</h1>
 
 <a href="/research/testproblems/">Back to main page</a>
+
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/01/CS_Retiremen_PortfolioSelection.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+
 Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.
-<strong>PROBLEM1: Problem_CVaR_only</strong>nMinimize -Linear+Quadratic ( expected portfolio terminal value + regularization)nsubject tonPortfolio value = sum(asset values)nCash outflow = sum(adjustments)nAsset position value dynamicsnLower and upper bounds on asset positionsnCVaR(-cash outflow - annuity yield) &lt; -required cash outflownBox constraints
+
+<strong>PROBLEM1: Problem_CVaR_only</strong>
+Minimize -Linear+Quadratic ( expected portfolio terminal value + regularization)nsubject tonPortfolio value = sum(asset values)
+Cash outflow = sum(adjustments)
+Asset position value dynamicsnLower and upper bounds on asset positionsnCVaR(-cash outflow - annuity yield) &lt; -required cash outflownBox constraints
 ——————————————————————–
 Quadratic = External Quadratic Penalty FunctionnBox constraints = constraints on individual decision variables
 ——————————————————————–
@@ -129,7 +136,11 @@ Quadratic = External Quadratic Penalty FunctionnBox constraints = constraints on
 </tbody>
 </table>
 </div>
-<strong>PROBLEM2: Problem_CVaR_plus_monotonicity</strong>nMinimize -Linear+Quadratic ( expected portfolio terminal value + regularization)nsubject tonPortfolio value = sum(asset values)nCash outflow = sum(adjustments)nAsset position value dynamicsnLower and upper bounds on asset positionsnCVaR(-cash outflow - annuity yield) = 0 (monotonicity constraint)nBox constraints (non-negativity constraints on positions)
+<strong>PROBLEM2: Problem_CVaR_plus_monotonicity</strong>
+Minimize -Linear+Quadratic ( expected portfolio terminal value + regularization)nsubject tonPortfolio value = sum(asset values)
+Cash outflow = sum(adjustments)
+Asset position value dynamicsnLower and upper bounds on asset positionsnCVaR(-cash outflow - annuity yield) = 0 (monotonicity constraint)
+Box constraints (non-negativity constraints on positions)
 ——————————————————————–
 Quadratic = External Quadratic Penalty FunctionnBox constraints = constraints on individual decision variables
 ——————————————————————–
@@ -227,7 +238,8 @@ Quadratic = External Quadratic Penalty FunctionnBox constraints = constraints on
 </tbody>
 </table>
 </div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>CASE STUDY SUMMARY</strong>nThis case study solves the retirement portfolio selection problem. The objective is to maximize discounted terminal wealth of the investor, while maintaining constant cash outflows from the portfolio by selling some portion of assets, over an entire investment horizon. The cash outflow requirements are imposed using CVaR constraints and additionally, by monotonicity constraint on the cash outflows.</div>
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>CASE STUDY SUMMARY</strong>
+This case study solves the retirement portfolio selection problem. The objective is to maximize discounted terminal wealth of the investor, while maintaining constant cash outflows from the portfolio by selling some portion of assets, over an entire investment horizon. The cash outflow requirements are imposed using CVaR constraints and additionally, by monotonicity constraint on the cash outflows.</div>
 </div>
 </div>
 

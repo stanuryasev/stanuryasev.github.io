@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/assets/main.css"/>
-    <meta name="description" content="Back to main page  Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Subr">
+    <meta name="description" content="Back to main page   Case study background and problem formulations Instructions for optimization with PSG Run-File, PSG MATLAB Toolbox, PSG MATLAB Sub">
     <title>Case Study: Spline Approximation — Stan Uryasev</title>
 </head>
 
@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -27,14 +28,19 @@
     <h1>Case Study: Spline Approximation</h1>
 
 <a href="/research/testproblems/">Back to main page</a>
+
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2014/04/CS_spline_approximation.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and problem formulations</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>PROBLEM1: problem_St_Pen</strong>nMinimize st_pen(spline_sum) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (function Standard Penalty applied to Spline Sum)nCalculate:nmeanabs_pen(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (function Mean Absolute Penalty applied to Spline Sum)nspline_sum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (function Spline Sum)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;"><strong>
+PROBLEM1: problem_St_Pen</strong>
+Minimize st_pen(spline_sum) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (function Standard Penalty applied to Spline Sum)
+Calculate:nmeanabs_pen(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (function Mean Absolute Penalty applied to Spline Sum)nspline_sum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (function Spline Sum)
 ——————————————————————–————————————————
 st_pen = Standard Penaltynmeanabs_pen = Mean Absolute Penaltynspline_sum = Spline Sum calculates spline value depending upon regression variables for every scenario
 ——————————————————————–————————————————
 ———————————————————————————
-<strong> Third Degree Polynomial Spline Consisting of 5 Piecies</strong>n———————————————————————————
+<strong> Third Degree Polynomial Spline Consisting of 5 Piecies</strong>
+———————————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
@@ -81,8 +87,10 @@ st_pen = Standard Penaltynmeanabs_pen = Mean Absolute Penaltynspline_sum = Splin
 </tr>
 </tbody>
 </table>
-</div>n———————————————————————————
-<strong> Third Degree Polynomial Spline Consisting of 30 Piecies</strong>n———————————————————————————
+</div>
+———————————————————————————
+<strong> Third Degree Polynomial Spline Consisting of 30 Piecies</strong>
+———————————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <table style="height: 188px;">
 <tbody>
@@ -131,11 +139,15 @@ st_pen = Standard Penaltynmeanabs_pen = Mean Absolute Penaltynspline_sum = Splin
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
-<strong> PROBLEM2: problem_Meanabs_Pen </strong>nMinimize meanabs_pen(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(function Mean Absolute Penalty applied to Spline Sum)nCalculate:nst_pen(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;(function Standard Penalty applied to Spline Sum)nspline_sum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (function Spline Sum)
+
+<strong> PROBLEM2: problem_Meanabs_Pen </strong>
+Minimize meanabs_pen(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(function Mean Absolute Penalty applied to Spline Sum)
+Calculate:nst_pen(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;(function Standard Penalty applied to Spline Sum)nspline_sum &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (function Spline Sum)
 ——————————————————————–————————————————
 meanabs_pen = Mean Absolute Penaltynst_pen = Standard Penaltynspline_sum = Spline Sum calculates spline value depending upon regression variables for every scenarion
 ———————————————————————————
-<strong> Third Degree Polynomial Spline Consisting of 5 Piecies</strong>n———————————————————————————
+<strong> Third Degree Polynomial Spline Consisting of 5 Piecies</strong>
+———————————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <table style="height: 188px;">
 <tbody>
@@ -182,8 +194,10 @@ meanabs_pen = Mean Absolute Penaltynst_pen = Standard Penaltynspline_sum = Splin
 </tr>
 </tbody>
 </table>
-</div>n————————————————————————————
-<strong> Third Degree Polynomial Spline Consisting of 30 Piecies</strong>n————————————————————————————
+</div>
+————————————————————————————
+<strong> Third Degree Polynomial Spline Consisting of 30 Piecies</strong>
+————————————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <table style="height: 188px;">
 <tbody>
@@ -232,7 +246,8 @@ meanabs_pen = Mean Absolute Penaltynst_pen = Standard Penaltynspline_sum = Splin
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">———————————————————————————
-<b>Subroutine for spline transformation with figures</b>n———————————————————————————</div>
+<b>Subroutine for spline transformation with figures</b>
+———————————————————————————</div>
 <div></div>
 <div></div>
 <div>
@@ -273,12 +288,15 @@ meanabs_pen = Mean Absolute Penaltynst_pen = Standard Penaltynspline_sum = Splin
 </div>
 </div>
 <div></div>
-<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;"><strong>PROBLEM3: problem_Logexp_Sum </strong>nMaximize logexp_sum(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (function Logarithms Exponents Sum applied to Spline Sum)nCalculate:nlogexp_sum(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp; (function Logarithms Exponents Sum applied to Spline Sum)nlogistic(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(function Logistic applied to Spline Sum)
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;"><strong>PROBLEM3: problem_Logexp_Sum </strong>
+Maximize logexp_sum(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (function Logarithms Exponents Sum applied to Spline Sum)
+Calculate:nlogexp_sum(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp; (function Logarithms Exponents Sum applied to Spline Sum)nlogistic(spline_sum)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(function Logistic applied to Spline Sum)
 ——————————————————————–————————————————
 logexp_sum = Logarithms Exponents Sumnlogistic = Logistic calculate values of logistic function of spline approximation for every scenarionspline_sum = Spline Sum calculates spline value depending upon regression variables for every scenario
 ——————————————————————–————————————————
 ———————————————————————————
-<strong> Third Degree Polynomial Spline Consisting of 5 Piecies</strong>n———————————————————————————
+<strong> Third Degree Polynomial Spline Consisting of 5 Piecies</strong>
+———————————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <table style="height: 188px;">
 <tbody>
@@ -325,8 +343,10 @@ logexp_sum = Logarithms Exponents Sumnlogistic = Logistic calculate values of lo
 </tr>
 </tbody>
 </table>
-</div>n————————————————————————————
-<strong> Third Degree Polynomial Spline Consisting of 30 Piecies</strong>n————————————————————————————
+</div>
+————————————————————————————
+<strong> Third Degree Polynomial Spline Consisting of 30 Piecies</strong>
+————————————————————————————
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">
 <table style="height: 188px;">
 <tbody>
@@ -376,7 +396,8 @@ logexp_sum = Logarithms Exponents Sumnlogistic = Logistic calculate values of lo
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000;">———————————————————————————
-<b>Subroutine for spline transformation with figures</b>n———————————————————————————</div>
+<b>Subroutine for spline transformation with figures</b>
+———————————————————————————</div>
 <div></div>
 <div></div>
 <div>
@@ -418,7 +439,9 @@ logexp_sum = Logarithms Exponents Sumnlogistic = Logistic calculate values of lo
 </div>
 <div></div>
 <strong>CASE STUDY SUMMARY</strong>
+
 Splines are calibrated to approximate one dimension observation data. Input data for building a spline are vectors containing data of independent and dependent variables and parameters defining number of knots and smoothing degree of the spline. The splines are calibrated by minimizing various error functions, such as mean square error, mean absolute error, and maximum likelihood logistic regression function (PSG functions: st_pen, meanabs_pen, and logexp_sum, accordingly).
+
 </div>
 </div>
 </div>

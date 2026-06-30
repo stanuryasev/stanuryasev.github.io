@@ -15,7 +15,8 @@
     <div class="site-header">
         <div class="site-name"><a href="/">Stan Uryasev</a></div>
         <nav class="site-menu">
-            <a href="/">Research</a>
+            <a href="/">Home</a>
+            <a href="/research/">Research</a>
             <a href="/publications/">Publications</a>
             <a class="current" href="/case-studies/">Case Studies</a>
             <a href="/qf-summary/">QF Summary</a>
@@ -30,11 +31,15 @@
 <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2018/01/CS_Kantorovich_3_Problems.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and formulation of problems</strong></span></a>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">Instructions for optimization with <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2019/11/RunFile_environment.pdf"><span style="font-family: Calibri; font-size: medium;">PSG Run-File</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/Matlab_Toolbox.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Toolbox</span></a>, <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/MatlabSubroutines.pdf"><span style="font-family: Calibri; font-size: medium;">PSG MATLAB Subroutines</span></a> and <a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2017/01/PSG_R.pdf"><span style="font-family: Calibri; font-size: medium;">PSG R</span></a>.</div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM1: problem_Kantorovich_minimize</strong>nMinimize Kantor (minimize Kantorovich-Rubinstein distance)nsubject tonLinear = 1 (sum of probabilities constraint)nBox constraints (lower bounds on probabilities)
+<strong>
+PROBLEM1: problem_Kantorovich_minimize</strong>
+Minimize Kantor (minimize Kantorovich-Rubinstein distance)nsubject tonLinear = 1 (sum of probabilities constraint)
+Box constraints (lower bounds on probabilities)
 ——————————————————————–——————
 Kantor = Kantorovich- Rubinstein distancenLinear = linear functionnBox constraints = constraints on individual decision variables
 ——————————————————————–——————
-Problem statement without initial point.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+Problem statement without initial point.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
 <tr style="height: 19px;">
@@ -80,7 +85,9 @@ Problem statement without initial point.n<div style="font-family: Calibri; font-
 </tr>
 </tbody>
 </table>
-</div>nProblem statement with initial point 0.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+</div>
+Problem statement with initial point 0.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
 <tr style="height: 19px;">
@@ -128,11 +135,16 @@ Problem statement without initial point.n<div style="font-family: Calibri; font-
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM2: problem_KSMavg_with_Cardinality</strong>nMinimize KSM_avg (minimize Average Kolmogorov-Smirnov distance)nsubject tonCardn ≤ Const (constraint on cardinality)nLinear = 1 (sum of probabilities constraint)nBox constraints (lower bounds on probabilities)
+<strong>
+PROBLEM2: problem_KSMavg_with_Cardinality</strong>
+Minimize KSM_avg (minimize Average Kolmogorov-Smirnov distance)nsubject tonCardn ≤ Const (constraint on cardinality)
+Linear = 1 (sum of probabilities constraint)
+Box constraints (lower bounds on probabilities)
 ——————————————————————–——————
 KSM_avg = Average Kolmogorov-Smirnov distancenCardn = CardinalitynLinear = linear functionnBox constraints = constraints on individual decision variables
 ——————————————————————–——————
-Problem statement with LINEARIZE=1 option.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+Problem statement with LINEARIZE=1 option.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
 <tr style="height: 19px;">
@@ -178,7 +190,9 @@ Problem statement with LINEARIZE=1 option.n<div style="font-family: Calibri; fon
 </tr>
 </tbody>
 </table>
-</div>nProblem statement with MIP=1 for constraint on cardinality function.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+</div>
+Problem statement with MIP=1 for constraint on cardinality function.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
 <tr style="height: 19px;">
@@ -226,11 +240,16 @@ Problem statement with LINEARIZE=1 option.n<div style="font-family: Calibri; fon
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM3: problem_KSMavg_with_Cvar_inequality</strong>nMinimize KSM_avg (minimize Average Kolmogorov-Smirnov distance)nsubject tonpcvars ≥ Consts (constraints on CVaRs)nLinear = 1 (sum of probabilities constraint)nBox constraints (lower bounds on probabilities)
+<strong>
+PROBLEM3: problem_KSMavg_with_Cvar_inequality</strong>
+Minimize KSM_avg (minimize Average Kolmogorov-Smirnov distance)nsubject tonpcvars ≥ Consts (constraints on CVaRs)
+Linear = 1 (sum of probabilities constraint)
+Box constraints (lower bounds on probabilities)
 ——————————————————————–——————
 KSM_avg = Average Kolmogorov-Smirnov distancenpcvars = CVaRs for discrete distribution as a function of atom probabilities with fixed atom locationsnLinear = linear functionnBox constraints = constraints on individual decision variables
 ——————————————————————–——————
-Problem statement with INEQUALITIES.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+Problem statement with INEQUALITIES.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
 <tr style="height: 19px;">
@@ -278,11 +297,16 @@ Problem statement with INEQUALITIES.n<div style="font-family: Calibri; font-size
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>PROBLEM4: problem_KSMavg_Cvar_equality</strong>nMinimize KSM_avg (minimize Average Kolmogorov-Smirnov distance)nsubject tonpcvars = Consts (constraints on CVaRs)nLinear = 1 (sum of probabilities constraint)nBox constraints (lower bounds on probabilities)
+<strong>
+PROBLEM4: problem_KSMavg_Cvar_equality</strong>
+Minimize KSM_avg (minimize Average Kolmogorov-Smirnov distance)nsubject tonpcvars = Consts (constraints on CVaRs)
+Linear = 1 (sum of probabilities constraint)
+Box constraints (lower bounds on probabilities)
 ——————————————————————–——————
 KSM_avg = Average Kolmogorov-Smirnov distancenpcvars = CVaRs for discrete distribution as a function of atom probabilities with fixed atom locationsnLinear = linear functionnBox constraints = constraints on individual decision variables
 ——————————————————————–——————
-Problem statement with EQUALITIES.n<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
+Problem statement with EQUALITIES.
+<div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
 <table style="height: 188px;">
 <tbody>
 <tr style="height: 19px;">
@@ -330,7 +354,16 @@ Problem statement with EQUALITIES.n<div style="font-family: Calibri; font-size: 
 </table>
 </div>
 <div style="font-family: Calibri; font-size: medium; line-height: 120%; color: #000000; width: 850px;">
-<strong>CASE STUDY SUMMARYn</strong>nThis case study demonstrates how to approximate a fixed one-dimensional discrete distribution by some other one-dimensional discrete distribution with variable probabilities and variable locations of atoms.To find the best approximations we minimized Kantorovich-Rubinstein and Average Kolmogorov-Smirnov distances between distributions.nPROBLEM1 minimizes Kantorovich-Rubinstein distance and finds the best approximating discrete distribution with a fixed number of atoms and variable probabilities and locations of the atoms. We considered two cases: without and with initial approximating distribution (initial point in the optimization problem).nPROBLEM 2 minimizes Average Kolmogorov-Smirnov distance and finds an approximating distribution with fixed locations and variable probabilities of the atoms. In this case, locations of atoms of the approximating distribution coincide with the location of atoms of the target distribution. To constraint the number of atoms with nonzero probabilities in the approximating distribution, we have imposed a cardinality constraint. We considered two options for the cardinality constraint: 1) “linearize=1”; 2) “mip=1”. These two options initiate different optimization approaches with cardinality constraints.nPROBLEM 3 and PROBLEM 4 minimize Average Kolmogorov-Smirnov distance and find an approximating distribution with fixed locations and variable probabilities of atoms. The number of atoms of the approximating distribution is 4 times smaller than the number of atoms of the target distribution. To assure that the right tail of the approximating distribution correctly matches the right tail of the target distribution we have imposed two CVaR constraints. We want to minimize distance between distributions and match two CVaRs of approximating and target distributions. We have considered two cases: 1) Problem 3: CVaRs of approximating distribution are larger than CVaRs of target distribution (in this case tails of approximating distribution are heavier than tail of target distribution). This problem is convex and optimality of the solution in guaranteed; 2) Problem 4: CVaRs of approximating distribution are equal to CVaRs of target distribution. This problem may have multiple extremums and solver finds some extremum(may be a local one).n<strong>References</strong>n• Kantorovich, L.V., and Rubinstein, G.Sh., On a space of totally additive functions, Vestn. Lening. Univ., Vol. 13, No. 7, pp. 52-59, 1958.
+<strong>
+CASE STUDY SUMMARYn</strong>
+This case study demonstrates how to approximate a fixed one-dimensional discrete distribution by some other one-dimensional discrete distribution with variable probabilities and variable locations of atoms.To find the best approximations we minimized Kantorovich-Rubinstein and Average Kolmogorov-Smirnov distances between distributions.
+PROBLEM1 minimizes Kantorovich-Rubinstein distance and finds the best approximating discrete distribution with a fixed number of atoms and variable probabilities and locations of the atoms. We considered two cases: without and with initial approximating distribution (initial point in the optimization problem).
+PROBLEM 2 minimizes Average Kolmogorov-Smirnov distance and finds an approximating distribution with fixed locations and variable probabilities of the atoms. In this case, locations of atoms of the approximating distribution coincide with the location of atoms of the target distribution. To constraint the number of atoms with nonzero probabilities in the approximating distribution, we have imposed a cardinality constraint. We considered two options for the cardinality constraint: 1) “linearize=1”; 2) “mip=1”. These two options initiate different optimization approaches with cardinality constraints.
+PROBLEM 3 and PROBLEM 4 minimize Average Kolmogorov-Smirnov distance and find an approximating distribution with fixed locations and variable probabilities of atoms. The number of atoms of the approximating distribution is 4 times smaller than the number of atoms of the target distribution. To assure that the right tail of the approximating distribution correctly matches the right tail of the target distribution we have imposed two CVaR constraints. We want to minimize distance between distributions and match two CVaRs of approximating and target distributions. We have considered two cases: 1) Problem 3: CVaRs of approximating distribution are larger than CVaRs of target distribution (in this case tails of approximating distribution are heavier than tail of target distribution). This problem is convex and optimality of the solution in guaranteed; 2) Problem 4: CVaRs of approximating distribution are equal to CVaRs of target distribution. This problem may have multiple extremums and solver finds some extremum(may be a local one).
+<strong>
+References</strong>
+• Kantorovich, L.V., and Rubinstein, G.Sh., On a space of totally additive functions, Vestn. Lening. Univ., Vol. 13, No. 7, pp. 52-59, 1958.
+
 </div>
 </div>
 </div>
