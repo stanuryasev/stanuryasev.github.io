@@ -1,4 +1,3 @@
-wp-content/uploads/2011/08/Program-of-workshop-Risk-Management-Approaches-in-Engineering-Applications.pdf
 wp-content/uploads/2011/08/bPOE_bSL_final.pdf
 wp-content/uploads/2011/11/APT_Sample-Path_Fuctions.pdf
 wp-content/uploads/2011/11/Aircraft_Routing_under_Risk_of_Detection.pdf

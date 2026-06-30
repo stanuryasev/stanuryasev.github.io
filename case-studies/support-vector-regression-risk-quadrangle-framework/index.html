@@ -25,6 +25,7 @@
         </nav>
     </div>
 
+    <main class="content">
     <h1>Case Study: Support Vector Regression: Risk Quadrangle Framework</h1>
 
 <p><a href="/research/testproblems/">Back to main page</a><br /><a href="https://uryasev.ams.stonybrook.edu/wp-content/uploads/2022/12/Case_Study__SVR.pdf"><span style="font-family: Calibri; font-size: large;"><strong> Case study background and formulation of problems</strong></span></a></p>
@@ -280,6 +281,7 @@
 </div>
 
 <p><strong>CASE STUDY SUMMARY<br></strong><br>This case study conducts Support Vector Regression (SVR) as regularized error minimization, regularized deviation minimization, and constrained quadratic programming (CQP) problem on simulated data (1000 observations), cf. [1].<br>Specifically, four equivalent implementations of SVR are considered (cf. Proposition 4.2 and Corollary 4.5 in [1] for the proof of equivalence ):<br>1. The CVaR Norm plus quadratic regularization penalty is minimized.  The CVaR  Norm is calculated as the superposition of the  CVaR  Risk and the absolute value of regression residuals (i.e., the absolute value of the standard PSG linear losses).<br>2. The Partial Moment function plus quadratic regularization penalty is minimized.<br>3. Convex combination of two CVaR deviations plus quadratic regularization penalty is minimized. The intercept is calculated as the average of two corresponding symmetric quantiles.<br>4. QP problem (dual to the CVaR Norm plus quadratic regularization penalty minimization) is solved. The solution to the primal problem is constructed.  <br><strong><br>References</strong><br>[1] Malandii, A. and S. Uryasev. Support Vector Regression: Risk Quadrangle Framework, Jan 2023, <strong><a href="https://arxiv.org/abs/2212.09178">arXiv:2212.09178</a></strong> </p>
+    </main>
 
     <footer>
         &copy; Stan Uryasev &nbsp;|&nbsp; Applied Mathematics and Statistics, Stony Brook University

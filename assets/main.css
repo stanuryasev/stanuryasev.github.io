@@ -92,6 +92,23 @@ table{
 }
 th,td{text-align: left;}
 
+/* Migrated WordPress page content (case studies, hubs, etc.) */
+.content{max-width:1000px; margin:0 auto;}
+.content p, .content ul, .content ol{width:auto; max-width:1000px;}
+.content table{
+    width:auto; max-width:100%; margin:1em 0;
+    border-collapse:collapse;
+    border:1px solid #b8b8b8;
+}
+.content table td, .content table th{
+    border:1px solid #c8c8c8;
+    padding:5px 9px;
+    vertical-align:top;
+}
+.content table th{background:#f0eef1; color:#52739e;}
+.content img{max-width:100%; height:auto;}
+.content h2, .content h3, .content h4{clear:none;}
+
 /* Website Banner */
 .banner {position: relative; font-family:'Roboto Slab',serif;}
 .banner img {width: 1000px; display:block;}
